@@ -1,0 +1,71 @@
+/* Existing shadow code */
+/* Add a shadow effect to the projects */
+.con {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Hide text and buttons by default */
+  .overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .detailsblock {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+  }
+  
+  .Acbutt {
+    opacity: 0;
+  }
+  
+  /* Show text and buttons on hover */
+  .con:hover .detailsblock {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .con:hover .Acbutt{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* .works{
+    display: grid;
+    grid-template-columns: auto;
+  } */
+
+  .project-details{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: royalblue;
+  }
+
+  .pdtech{
+    border: solid 1px black;
+  }
+
+  .languages{
+    display: flex;
+    gap: 2%;
+  }
+  
+  @media screen and (min-width: 769px) {
+    .works{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .con{
+      width: 30%;
+      margin: 1%;
+    }
+  }
