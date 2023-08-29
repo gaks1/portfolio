@@ -9,12 +9,56 @@ import seesource from '../img/seesource.png';
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
+  useEffect(() => {
+    const nav = document.querySelector('.navbar');
+    const header = document.querySelector('.text-section');
+    const title = document.querySelector('.section-title');
+    const portfolio = document.querySelector('.projects-card');
+    const about = document.querySelector('#about');
+    const contact = document.querySelector('#contact');
+
+    // Check if these elements exist before manipulating them
+    if (nav && header && portfolio && about && contact && title) {
+      // Code to access and manipulate these elements here
+    }
+  }, []); 
+
   const handleClick = (project) => {
     setSelectedProject(project);
+    const nav = document.querySelector('.navbar');
+    const header = document.querySelector('.text-section');
+    const title = document.querySelector('.section-title');
+    const portfolio = document.querySelector('.projects-card');
+    const about = document.querySelector('#about');
+    const contact = document.querySelector('#contact');
+
+    if (nav && header && portfolio && about && contact) {
+      nav.classList.add('blur');
+      header.classList.add('blur');
+      title.classList.add('blur');
+      portfolio.classList.add('blur');
+      about.classList.add('blur');
+      contact.classList.add('blur');
+    }
   };
 
   const closeDetails = () => {
     setSelectedProject(null);
+    const nav = document.querySelector('.navbar');
+    const header = document.querySelector('.text-section');
+    const title = document.querySelector('.section-title');
+    const portfolio = document.querySelector('.projects-card');
+    const about = document.querySelector('#about');
+    const contact = document.querySelector('#contact');
+
+    if (nav && header && portfolio && about && contact) {
+      nav.classList.remove('blur');
+      header.classList.remove('blur');
+      title.classList.remove('blur');
+      portfolio.classList.remove('blur');
+      about.classList.remove('blur');
+      contact.classList.remove('blur');
+    }
   };
 
   return (
@@ -75,11 +119,11 @@ const Projects = () => {
                 <div>
                 <p className='selectdescription'>{selectedProject.longdescription}</p>
               <div className="project-links">
-                    <a href={selectedProject.livelink[0]} className="livelink button-color" target="_blank" rel="noopener noreferrer">
+                    <a href={selectedProject.livelink[0]} className="livelink button-color button-transform" target="_blank" rel="noopener noreferrer">
                       {selectedProject.livelink[1]}
                       <img src={seelive} alt='see live' />
                       </a>
-                    <a href={selectedProject.sourcelink[0]} className="sourcelink button-color" target="_blank" rel="noopener noreferrer">
+                    <a href={selectedProject.sourcelink[0]} className="sourcelink button-color button-transform" target="_blank" rel="noopener noreferrer">
                       {selectedProject.sourcelink[1]}
                       <img src={ seesource } alt='see source' />
                       </a>
