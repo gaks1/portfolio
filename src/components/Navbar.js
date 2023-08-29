@@ -25,7 +25,7 @@ const Navbar = () => {
         <a href="#contact" className="nav-list button-transform">
           Contact
         </a>
-        <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:iwanyoike65@gmail.com" target="_blank" rel="noopener noreferrer">
   <img className='mailto button-transform' src={EmailIcon} alt="Email" />
 </a>
       </div>

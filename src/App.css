@@ -52,3 +52,11 @@ a{
     .b1transform:hover{
       transform: scale(1.05);
     }
+
+    .b2transform{
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .b2transform:hover{
+      transform: scale(1.1);
+    }

@@ -111,7 +111,7 @@ const Projects = () => {
               </ul>
               <div className='image-links'>
               <img
-              className='detailsimage'
+              className='detailsimage b2transform'
                         src={selectedProject.imagesource}
                         alt={selectedProject.altmessage}
                         style={{ width: '40%' }}
