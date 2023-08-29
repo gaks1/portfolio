@@ -1,50 +1,50 @@
 import '../styles/Contact.css';
-import Twitter from '../img/Twitter.png';
-import Linkedin from '../img/Linkedin.png';
-import Medium from '../img/Medium.png';
-import Github from '../img/GitHub.png';
-import Angelist from '../img/Angelist.png';
+import Twitter from '../img/darkTwitter.png';
+import Linkedin from '../img/darkLinkedin.png';
+import Medium from '../img/darkMedium.png';
+import Github from '../img/darkGitHub.png';
+import Angelist from '../img/darkAngelist.png';
 
 const Footer = () => {
     return (
-<section id="contact" class="contact-section">
-  <div class="contact">
-            <p class="contact-par">If you have an application you are interested in developing, a feature that you need built or
+<section id="contact" className="contact-section">
+  <div className="contact">
+            <p className="contact-par">If you have an application you are interested in developing, a feature that you need built or
                 a project that needs
                 coding. I’d love to help with it</p>
-            <form class="contact-form" action="https://formspree.io/f/myyazwzw" method="POST">
-<input class="name" type="text" name="username"  placeholder="Yeremias" maxlength="30" required></input>
-                <input class="email"  type="email" name="useremail"  placeholder="natajayanj14@gmail.com" required></input>
-                    <textarea class="feedback" name="userfeedback" placeholder="Write your message here" cols="30" rows="10" maxlength="500"
+            <form className="contact-form" action="https://formspree.io/f/myyazwzw" method="POST">
+<input className="name" type="text" name="username"  placeholder="Yeremias" maxLength="30" required></input>
+                <input className="email"  type="email" name="useremail"  placeholder="natajayanj14@gmail.com" required></input>
+                    <textarea className="feedback" name="userfeedback" placeholder="Write your message here" cols="30" rows="10" maxLength="500"
                         required></textarea>
-                        <small class="error"></small>
-                        <button class="form-button">Get It Touch</button>
+                        <small className="error"></small>
+                        <button className="button-transform form-button button-color button-transform">Get It Touch</button>
             </form>
             </div>
             <ul className="contact-bottom">
             <li>
-                  <a href="https://twitter.com/gakure_isa47253">
-                      <img src={ Twitter } alt="twitter" />
+                  <a href="https://twitter.com/gakure_isa47253" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Twitter } alt="twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/isaacgakurewanyoike/">
-                      <img src={ Linkedin }  alt="Linked In" />
+                  <a href="https://www.linkedin.com/in/isaacgakurewanyoike/" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Linkedin }  alt="Linked In" />
                   </a>
                 </li>
                 <li className="medium">
-                  <a href="https://medium.com/@iwanyoike65">
-                      <img src={ Medium }  alt="Medium" />
+                  <a href="https://medium.com/@iwanyoike65" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Medium }  alt="Medium" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/gaks1">
-                      <img src={ Github }  alt="Github" />
+                  <a href="https://github.com/gaks1" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Github }  alt="Github" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://wellfound.com/u/isaacgakurewanyoike">
-                      <img src={ Angelist }  alt="Angelist" />
+                  <a href="https://wellfound.com/u/isaacgakurewanyoike" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Angelist }  alt="Angelist" />
                   </a>
                 </li>
               </ul>

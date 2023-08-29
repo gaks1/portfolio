@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Projects.css';
 import { data } from './data';
+import Close from '../img/close.svg';
+import seelive from '../img/seelive.png';
+import seesource from '../img/seesource.png';
+
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -15,9 +19,14 @@ const Projects = () => {
 
   return (
     <section id="portfolio" className="works">
+      <div className="section-title">
+        <h2>My Recent Works</h2>
+        <div className='line'></div>
+      </div>
+      <div className="projects-card">
       {data.map((project, index) => (
         <div
-          className='con'
+          className='con b1transform'
           key={project.uniqueid}
           style={{
             backgroundImage: `url(${project.imagesource})`,
@@ -29,25 +38,25 @@ const Projects = () => {
               <p className="description">{project.description}</p>
               <ul className="languages">
                 {project.technologies.map((tech, techIndex) => (
-                  <li className={`${tech}-1`} key={techIndex}>
+                  <li className={`${tech}-1 seetech`} key={techIndex}>
                     <p className={tech}>{tech}</p>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="seeproject">
-              <button className="Acbutt" onClick={() => handleClick(project)}>{project.buttontext}</button>
+              <button className="Acbutt button-color" onClick={() => handleClick(project)}>{project.buttontext}</button>
             </div>
           </div>
         </div>
       ))}
+      </div>
+      <div className="project-info">
       {selectedProject && (
-        <div className="project-details">
-            <div>
+        <div className={`project-details ${selectedProject ? 'show-details' : ''}`}>
+            <div className='project-details-head'>
             <h2>{selectedProject.name}</h2>
-              <button className="close-button" onClick={closeDetails}>
-                Close
-              </button>
+              <img src={ Close } alt="menu" className='btransform close-button' onClick={closeDetails}/>
             </div>
               <ul className="languages">
                 {selectedProject.technologies.map((tech, techIndex) => (
@@ -56,7 +65,7 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              <div>
+              <div className='image-links'>
               <img
               className='detailsimage'
                         src={selectedProject.imagesource}
@@ -64,19 +73,22 @@ const Projects = () => {
                         style={{ width: '40%' }}
                     />
                 <div>
-                <p>{selectedProject.longdescription}</p>
+                <p className='selectdescription'>{selectedProject.longdescription}</p>
               <div className="project-links">
-                <button className="livelink">
-                    <a href={selectedProject.livelink[0]}>{selectedProject.livelink[1]}</a>
-                </button>
-                <button className="sourcelink">
-                    <a href={selectedProject.sourcelink[0]}>{selectedProject.sourcelink[1]}</a>
-                </button>
+                    <a href={selectedProject.livelink[0]} className="livelink button-color" target="_blank" rel="noopener noreferrer">
+                      {selectedProject.livelink[1]}
+                      <img src={seelive} alt='see live' />
+                      </a>
+                    <a href={selectedProject.sourcelink[0]} className="sourcelink button-color" target="_blank" rel="noopener noreferrer">
+                      {selectedProject.sourcelink[1]}
+                      <img src={ seesource } alt='see source' />
+                      </a>
                 </div>
                 </div>
               </div>
         </div>
       )}
+      </div>
     </section>
   );
 };

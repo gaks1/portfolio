@@ -13,29 +13,29 @@ const Header = () => {
               <p className="header-paragraph white">I’m a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             </div>
             <ul className="socials">
-                <li>
-                  <a href="https://twitter.com/gakure_isa47253">
-                      <img src={ Twitter } alt="twitter" />
+            <li>
+                  <a href="https://twitter.com/gakure_isa47253" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Twitter } alt="twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/isaacgakurewanyoike/">
-                      <img src={ Linkedin }  alt="Linked In" />
+                  <a href="https://www.linkedin.com/in/isaacgakurewanyoike/" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Linkedin }  alt="Linked In" />
                   </a>
                 </li>
                 <li className="medium">
-                  <a href="https://medium.com/@iwanyoike65">
-                      <img src={ Medium }  alt="Medium" />
+                  <a href="https://medium.com/@iwanyoike65" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Medium }  alt="Medium" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/gaks1">
-                      <img src={ Github }  alt="Github" />
+                  <a href="https://github.com/gaks1" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Github }  alt="Github" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://wellfound.com/u/isaacgakurewanyoike">
-                      <img src={ Angelist }  alt="Angelist" />
+                  <a href="https://wellfound.com/u/isaacgakurewanyoike" target="_blank" rel="noopener noreferrer">
+                      <img className='btransform' src={ Angelist }  alt="Angelist" />
                   </a>
                 </li>
               </ul>

@@ -12,3 +12,43 @@ a{
       li{
         list-style: none;
     }
+
+    .blur {
+      filter: blur(4.5px);
+    }
+
+    .hide{
+      display: none !important;
+    }
+
+    .button-color{
+      border: none;
+      background-color: #F55800;
+      color: white;
+    }
+
+    .button-color:hover{
+      border: solid 1px #F55800;
+      background-color: #FFF5E1;
+      color: #F55800;
+    }
+
+    .button-transform:hover{
+      transform: scale(1.2);
+    }
+
+    .button-transform{
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .btransform:hover{
+      transform: scale(1.6);
+    }
+
+    .btransform{
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .b1transform:hover{
+      transform: scale(1.05);
+    }

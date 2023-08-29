@@ -1,15 +1,41 @@
 .about{
     background-color: #1C1A19;
     padding: 5%;
+    background-image: url("/src/img/mabout.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 300px;
+}
+
+.about-top{
+    border-bottom: 1px solid #DBD8D7;
+    height: 87vh;
 }
 
 .about-hello{
     color: #fff;
+    font-weight: 400;
+    font-size: 16px !important;
+    margin-bottom: 20px;
 }
 
 .about-header{
     color:#FF6B00;
-    text-align: center;
+    font-weight: 400;
+    font-size: 72px !important;
+    margin-bottom: 50px;
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 153px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px !important;
+    margin-bottom: 50px;
 }
 
 .about-bottom{
@@ -19,10 +45,17 @@
     align-items: center;
 }
 
-.about-bottom ul{
+.list{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+}
+
+.list li{
+    font-size: 22px !important;
+    font-weight: 400;
 }
 
 .Languages, .Frameworks, .Skills{
@@ -32,16 +65,39 @@
     gap: 2%;
 } 
 
+.img-size{
+    height: 90%;
+}
+
 .about-bottom-header{
     display: flex;
-    gap: 0.5%;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-top: 20px;
+}
+
+.about-bottom-header h2{
+    font-weight: 700;
+    font-size: 32px !important;
 }
 
 @media screen and (min-width: 769px) {
+    .about{
+        background-image: url("/src/img/about.png");
+        background-size: 50% 40%;
+        background-position-x: right;
+        background-position-y: 60px;
+    }
+
+    .about-top{
+        height: 65vh;
+    }
     .about-bottom{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        padding: 0 1%;
     }
 
     .about-bottom ul{
@@ -51,5 +107,10 @@
     .Languages, .Frameworks, .Skills{
         align-items: flex-start;
         gap: 2%;
+    }
+
+    .about-hello{
+        font-size: 20px !important;
+        width: 45%
     }
 }
