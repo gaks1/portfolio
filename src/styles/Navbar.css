@@ -30,6 +30,18 @@
 .nav-ham-menu{
     display: none;
     margin-right: 5%;
+    animation: menu 1s;
+}
+
+@keyframes menu{
+    0%{
+        opacity: 0;
+        transform: translatex(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
 }
 
 .bar{

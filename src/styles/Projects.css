@@ -88,9 +88,19 @@
     bottom: 0;
     z-index: 1000; /* Ensure it's above other content */
     opacity: 0;
-    transform: translateY(-50px); /* Start above the screen */
-    transition: opacity 0.3s ease, transform 0.3s ease;
     overflow-y: scroll;
+    animation: details 1s;
+  }
+
+  @keyframes details {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .project-details.show-details {
