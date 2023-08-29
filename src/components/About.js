@@ -37,6 +37,7 @@ const About = () => {
                     <li>Ruby on Rails</li>
                     <li>Rspec</li>
                     <li>Capybara</li>
+                    <li>Bootstrap</li>
                 </ul>  
             </div>
             <div className='Skills'>

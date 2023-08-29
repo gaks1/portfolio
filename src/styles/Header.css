@@ -28,6 +28,12 @@
     font-weight: 400;
 }
 
+.header-sub{
+    font-size: 32px !important;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
 .text-container{
     padding-top: 15vh;
 }

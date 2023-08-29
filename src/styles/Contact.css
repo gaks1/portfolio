@@ -25,6 +25,7 @@
     border-top: 1px solid #DBD8D7;
     padding-top: 15px;
     padding-bottom: 25px;
+    width: 100%;
 }
 
 .name{
@@ -82,6 +83,16 @@
     margin-bottom: 40px;
 }
 
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    width: 100%;
+}
 @media screen and (min-width: 769px) {
     .contact{
         display: flex;
@@ -95,5 +106,8 @@
         width: 57%;
         align-items: flex-start;
         margin-left: 5%;
+    }
+
+    .bottom{
     }
 }
