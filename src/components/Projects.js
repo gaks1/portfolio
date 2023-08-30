@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Projects.css';
 import { data } from './data';
 import Close from '../img/close.svg';
-import seelive from '../img/seelive.png';
-import seesource from '../img/seesource.png';
+import seelive from '../img/seelive.webp';
+import seesource from '../img/seesource.webp';
 
 
 const Projects = () => {

@@ -1,7 +1,7 @@
 import '../styles/About.css';
-import circle from '../img/circle.png';
-import Diamond from '../img/Diamond.png';
-import square from '../img/square.png';
+import circle from '../img/circle.webp';
+import Diamond from '../img/Diamond.webp';
+import square from '../img/square.webp';
 
 const About = () => {
     const resume = '/Isaac_Gakure_Resume.pdf'

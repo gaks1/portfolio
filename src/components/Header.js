@@ -1,9 +1,9 @@
 import '../styles/Header.css';
-import Twitter from '../img/Twitter.png';
-import Linkedin from '../img/Linkedin.png';
-import Medium from '../img/Medium.png';
-import Github from '../img/GitHub.png';
-import Angelist from '../img/Angelist.png';
+import Twitter from '../img/Twitter.webp';
+import Linkedin from '../img/Linkedin.webp';
+import Medium from '../img/Medium.webp';
+import Github from '../img/GitHub.webp';
+import Angelist from '../img/Angelist.webp';
 
 const Header = () => {
     return (

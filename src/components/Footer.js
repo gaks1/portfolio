@@ -1,9 +1,9 @@
 import '../styles/Contact.css';
-import Twitter from '../img/darkTwitter.png';
-import Linkedin from '../img/darkLinkedin.png';
-import Medium from '../img/darkMedium.png';
-import Github from '../img/darkGitHub.png';
-import Angelist from '../img/darkAngelist.png';
+import Twitter from '../img/darkTwitter.webp';
+import Linkedin from '../img/darkLinkedin.webp';
+import Medium from '../img/darkMedium.webp';
+import Github from '../img/darkGitHub.webp';
+import Angelist from '../img/darkAngelist.webp';
 
 
 const Footer = () => {

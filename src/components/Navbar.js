@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../img/Logo.png';
+import Logo from '../img/Logo.webp';
 import Close from '../img/close.svg';
 import Menu from '../img/menu.svg';
 import '../styles/Navbar.css';

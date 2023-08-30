@@ -1,7 +1,7 @@
 .about{
     background-color: #1C1A19;
     padding: 5%;
-    background-image: url("/src/img/mabout.png");
+    background-image: url("/src/img/mabout.webp");
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 430px;
@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 769px) {
     .about{
-        background-image: url("/src/img/about.png");
+        background-image: url("/src/img/about.webp");
         background-size: 50% 40%;
         background-position-x: right;
         background-position-y: 60px;
