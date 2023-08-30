@@ -6,11 +6,10 @@ import square from '../img/square.png';
 const About = () => {
     const resume = '/Isaac_Gakure_Resume.pdf'
     return (
-        <section id="about" class="about">
+        <section id="about" className="about">
         <div className="about-top">
             <h2 className="about-header">About Me</h2>
-            <p className="about-hello">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and
-            experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+            <p className="about-hello">As a Full Stack Web Developer, I am proficient in both React and Ruby on Rails. With over 1300 hours of hands-on experience, I have mentored 2 junior developers, contributed to projects like the Hotel App and Countries app, and stay up-to-date with industry trends and technologies. I am dedicated to continuous learning and innovation. Check out my GitHub, LinkedIn, or portfolio for examples of my excellent web solutions.</p>
             <a href={ resume } target="_blank" rel="noopener noreferrer" className="resume button-color button-transform">Get my resume</a>
         </div>
 

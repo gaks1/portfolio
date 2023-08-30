@@ -4,12 +4,12 @@
     background-image: url("/src/img/mabout.png");
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: 300px;
+    background-position-y: 430px;
 }
 
 .about-top{
     border-bottom: 1px solid #DBD8D7;
-    height: 87vh;
+    height: 105vh;
 }
 
 .about-hello{
@@ -91,7 +91,7 @@
     }
 
     .about-top{
-        height: 65vh;
+        height: 87vh;
     }
     .about-bottom{
         flex-direction: row;

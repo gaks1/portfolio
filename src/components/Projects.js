@@ -70,7 +70,7 @@ const Projects = () => {
       <div className="projects-card">
       {data.map((project, index) => (
         <div
-          className='con b1transform'
+          className='con'
           key={project.uniqueid}
           style={{
             backgroundImage: `url(${project.imagesource})`,
@@ -111,7 +111,7 @@ const Projects = () => {
               </ul>
               <div className='image-links'>
               <img
-              className='detailsimage b2transform'
+              className='detailsimage'
                         src={selectedProject.imagesource}
                         alt={selectedProject.altmessage}
                         style={{ width: '40%' }}
