@@ -33,31 +33,3 @@ a{
       background-color: #FFF5E1;
       color: #F55800;
     }
-
-    .button-transform:hover{
-      transform: scale(1.2);
-    }
-
-    .button-transform{
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .btransform:hover{
-      transform: scale(1.6);
-    }
-
-    .btransform{
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .b1transform:hover{
-      transform: scale(1.05);
-    }
-
-    .b2transform{
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .b2transform:hover{
-      transform: scale(1.1);
-    }

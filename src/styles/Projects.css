@@ -24,7 +24,7 @@
   }
   
   .Acbutt {
-    opacity: 0;
+    opacity: 1;
     height: 48px;
     width: 100%;
     display: flex;
@@ -33,12 +33,8 @@
     font-size: 17px;
     font-weight: 700;
   }
-  
-  .seeproject{
-    display: none;
-  }
 
-  .con:hover .seeproject{
+  .con:hover{
     display: block;
   }
 
@@ -47,7 +43,7 @@
     transition: opacity 0.3s ease-in-out;
   }
   
-  .con:hover .Acbutt{
+  .con:hover{
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
